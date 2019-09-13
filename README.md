@@ -2,7 +2,7 @@
 Project to scan and grade MCQ answer sheets
 Python based Software system to grade multiple-choice questions using webcam. This will save lot of money which is required to print OMR sheets as MCQ sheets required by our software can be printed by any traditional printer. Also, there will be no need to buy special OMR scanners as system will be using a webcam to scan and grade the MCQs.
 
-#Logic to detect filled options is explained below:
+## Logic to detect filled options is explained below:
 A. Boundaries detection: To detect the boundaries of the MCQ sheet this project uses the open CV’s simple blob detection function and identifies the top, bottom, right and left boundaries by sorting the detected blobs.
 B. Filled options detection: For filled options detection we created new logic which is explained below
 1. Scan the image using web cam, once all the boundary blobs are detected capture that image frame.
