@@ -6,7 +6,6 @@ Python based Software system to grade multiple-choice questions using webcam. Th
 A. Boundaries detection: To detect the boundaries of the MCQ sheet this project uses the open CV’s simple blob detection function and identifies the top, bottom, right and left boundaries by sorting the detected blobs.
 
 <img src="IMAGES/Scanned_MCQ_Sheet.jpg">
----
 
 B. Filled options detection: For filled options detection we created new logic which is explained below
 1. Scan the image using web cam, once all the boundary blobs are detected capture that image frame.
@@ -14,7 +13,6 @@ B. Filled options detection: For filled options detection we created new logic w
 3. Identify the centre point of each option’s circle by intersecting the virtual lines generated using boundary blobs.
 
 <img src="IMAGES/Detect_Center_Points.jpg">
----
 
 4. Identify the smallest boundary blob and calculate its radius to be used in next step.
 5. Draw virtual circles using the centre points detected in step3 and radius obtained in step 4.
